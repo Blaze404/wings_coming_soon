@@ -46,6 +46,9 @@ body{
     border-radius:1.5rem;
     outline:none;
     border:0px solid white;
+    color: grey;
+    font-family: 'Signika Negative', sans-serif;
+
   }
   .notify-me-btn{
     color:white;
