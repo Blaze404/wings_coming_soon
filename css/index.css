@@ -1,0 +1,32 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #081018;
+    }
+
+    .torch-complete{
+        border: 2px solid white;
+        position: fixed;
+        bottom: 0;
+        display: block;
+    }
+    canvas {
+    position: relative;
+    left: -10%;
+    width: 30vh;
+    height: 40vh;
+    border: 1px solid green;
+    }
+
+    #flameparticle {
+    display: none;
+    }
+    #torch{
+        position: relative;
+        top: 30vh;
+        /* display: none; */
+        z-index: -1;
+    }
