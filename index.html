@@ -25,6 +25,8 @@
 
     <script src="js/dat_jui.js"></script>
     <script src="js/particle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <style>
    
     </style>
@@ -32,7 +34,31 @@
 </head>
 
 <body id="particle-slider" >
-        <div id="particles-js" style="z-index: -10;"></div>
+                        <!-- Loader -->
+            <div class="loader">
+                    <div class="blobs">
+                        <div class="blob-center"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                    </svg>
+                    <div class="loading-container"><h3>Loading</h3></div>
+                    
+                    </div>
+                
+                    <div id="particles-js" style="z-index: -10;"></div>
     
     
                     <div class="slides" style="z-index: -1">
@@ -40,6 +66,7 @@
                         </div>
                       </div>
                         <canvas  class="draw"></canvas>
+                        
                         <div class="wings-container" style="z-index: 999">
                                 <img class="wings-image" style="z-index: 999" src="images/wingswhite.png"  alt="wings logo">
                         </div>
@@ -50,7 +77,8 @@
               
         <script>
                 
-            var init = function(){
+            setTimeout(function(){
+                var init = function(){
             var isMobile = navigator.userAgent &&
                 navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
             var isSmall = window.innerWidth < 1000;
@@ -81,6 +109,9 @@
             ? window.addEventListener('load', initParticleSlider, false)
             : window.onload = initParticleSlider);
 
+            }, 2500)
+
+          
             const particlesJSON = {
 "particles": {
         "number": {
@@ -184,6 +215,20 @@
     particlesJS("particles-js", particlesJSON)
 
         </script>
+
+        <!-- PAGE LOAD SCRIPT -->
+        <script>
+                $('#particles-js').hide();
+                $('.button-div').hide();
+                $('.wings-container').hide();
+                setTimeout(function(){
+                    $('.loader').fadeOut();
+                    $('#particles-js').fadeIn();
+                    $('.button-div').fadeIn();
+                    $('.wings-container').fadeIn();
+                   
+                }, 2500)
+            </script>
 
 </body>
 </html>
