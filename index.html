@@ -101,41 +101,6 @@
                               </dialog>
               
         <script>
-                
-            setTimeout(function(){
-                var init = function(){
-            var isMobile = navigator.userAgent &&
-                navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
-            var isSmall = window.innerWidth < 1000;
-            
-            var ps = new ParticleSlider({
-                ptlGap: isMobile || isSmall ? 3 : 0,
-                ptlSize: isMobile || isSmall ? 3 : 1,
-                width: 1e9,
-                height: 1e9
-            });
-                
-            (window.addEventListener
-            ? window.addEventListener('click', function(){ps.init(true)}, false)
-            : window.onclick = function(){ps.init(true)});
-            }
-
-            var initParticleSlider = function(){
-            var psScript = document.createElement('script');
-            (psScript.addEventListener
-                ? psScript.addEventListener('load', init, false)
-                : psScript.onload = init);
-            psScript.src = 'js/ps09.js';
-                psScript.setAttribute('type', 'text/javascript');
-            document.body.appendChild(psScript);
-            }
-                
-            (window.addEventListener
-            ? window.addEventListener('load', initParticleSlider, false)
-            : window.onload = initParticleSlider);
-
-            }, 2500)
-
           
             const particlesJSON = {
 "particles": {
@@ -239,15 +204,48 @@
 
     particlesJS("particles-js", particlesJSON)
 
-        </script>
 
-        <!-- PAGE LOAD SCRIPT -->
-        <script>
+        // <!-- PAGE LOAD SCRIPT -->
                 
                 $('#particles-js').hide();
                 $('.button-div').hide();
                 $('.wings-container').hide();
+
+                var random_load = parseInt(2500 + (Math.random()*600));
+
                 setTimeout(function(){
+
+                    var init = function(){
+            var isMobile = navigator.userAgent &&
+                navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
+            var isSmall = window.innerWidth < 1000;
+            
+            var ps = new ParticleSlider({
+                ptlGap: isMobile || isSmall ? 3 : 0,
+                ptlSize: isMobile || isSmall ? 3 : 1,
+                width: 1e9,
+                height: 1e9
+            });
+                
+            (window.addEventListener
+            ? window.addEventListener('click', function(){ps.init(true)}, false)
+            : window.onclick = function(){ps.init(true)});
+            }
+
+            var initParticleSlider = function(){
+            var psScript = document.createElement('script');
+            (psScript.addEventListener
+                ? psScript.addEventListener('load', init, false)
+                : psScript.onload = init);
+            psScript.src = 'js/ps09.js';
+                psScript.setAttribute('type', 'text/javascript');
+            document.body.appendChild(psScript);
+            }
+                
+            (window.addEventListener
+            ? window.addEventListener('load', initParticleSlider, false)
+            : window.onload = initParticleSlider);
+
                     $('.loader').fadeOut();
                     $('#particles-js').fadeIn();
                     
@@ -257,7 +255,7 @@
                         $('.button-div').fadeIn(2000);
                     }, 4100)
                    
-                }, 2500)
+                }, random_load)
 
                 function handle_query(){
                     document.querySelector('#confirm-modal').close()
