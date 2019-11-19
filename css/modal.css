@@ -75,6 +75,9 @@
 	 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 	 animation: show-modal 0.5s ease forwards;
 }
+#close_it{
+    cursor: pointer;
+}
 #email{
     border-radius: 10px;
     font-size: 18px;
