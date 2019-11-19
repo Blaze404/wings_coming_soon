@@ -62,8 +62,18 @@
     
     
                     <div class="slides" style="z-index: -1">
-                      <div id="first-slide"  class="slide" data-src="images/comingsoonmed.png">
+                      <div id="first-slide"  class="slide" >
                         </div>
+                        <script>
+                            // $('#first-slide').data('src','images/comingsoonmed.png');
+                            if(window.innerWidth <= 768){
+                                document.getElementById("first-slide").setAttribute('data-src', 'images/coming_soon.png');
+                            }
+                            else{
+                                document.getElementById("first-slide").setAttribute('data-src', 'images/coming_soon_2.png');
+                            }
+                            
+                        </script>
                       </div>
                         <canvas  class="draw"></canvas>
                         
@@ -218,6 +228,7 @@
 
         <!-- PAGE LOAD SCRIPT -->
         <script>
+                
                 $('#particles-js').hide();
                 $('.button-div').hide();
                 $('.wings-container').hide();
