@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wings</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- SEO WITH META TAGS -->
+
+  <meta name="description" content="Official Website of Wings 2020 - National Level event hosted by Government College of Engineering Aurangabad">
+
+    <meta name="author" content="Government College of Engineering Aurangabad">
+
+    <meta name="robots" content="index, follow" />
+
+    <meta name="keywords" content="Wings, wings2020, geca, government college of engineering aurangabad, hackathon, robowars, nitroracing, make in geca, coder of the year, cicada, drone racing, innovation, aurangabad, marathwada, maharashtra, india, technical event">
+
+    <meta name="copyright" content="Government College of Engineering Aurangabad">
+
+    <meta name="DC.title" content="Wings Official Website">
+
+  <!-- END SEO WITH META TAGS -->
+
+    <script src="scripts/three.r92.min.js"></script>
+    <script src="scripts/vanta.fog.min.js"></script>
+
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        <link rel="stylesheet" href="css/index5.css">
+
+</head>
+<body>
+
+        <!-- Loader -->
+            <div class="loader">
+            <div class="blobs">
+                <div class="blob-center"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+            </svg>
+            <div class="loading-container"><h3>Loading</h3></div>
+            
+            </div>
+
+
+        <div class="wrapper" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8" id="artiststhumbnail"> <img id="wings" src="images/Wings Logo.png" class="responsive" alt="wings logo"> </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center">
+                            <div class="coming-soon">
+                                    
+                                    <h1 class="ml12">COMING SOON</h1>
+                              
+                              
+                                  </div>
+                    </div>     
+                            
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--   <div class="quote">
+                                  <p>Intellegance with ambitions</p>
+                                </div> -->
+                                <form action="">
+                                <div class="form" action style="margin-top: 5%">
+                                    
+                                        <div class="form-wrapper">
+                                        <input class="input-mail" type="email" placeholder="Eg. yourmail@mail.com">
+                                        <button type="submit" class="notify-me-btn"> Notify me</button>
+                                        </div>
+                                    
+                                      </div>
+                                    </form>
+                                </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+
+        <script>
+                
+                VANTA.FOG({ el: ".wrapper",
+                                highlightColor: 0xb122de,
+                    midtoneColor: 0x0C3BF6,
+                    lowlightColor: 0xF33C27,
+                    baseColor: 0x29F2E3,
+                    speed: 2.40,
+                    });
+
+                $('#wings').hide();
+                $('.wrapper').hide();
+                setTimeout(function(){ 
+                        
+
+                // Wrap every letter in a span
+                    var textWrapper = document.querySelector('.ml12');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                    
+                    anime.timeline({loop: false})
+                    .add({
+                        targets: '.ml12 .letter',
+                        translateX: [40,0],
+                        translateZ: 0,
+                        opacity: [0,1],
+                        easing: "easeOutExpo",
+                        duration: 2000,
+                        delay: (el, i) => 500 + 30 * i
+                        });
+                        setTimeout(function(){            $('.ml12').css("visibility", "visible");
+                        }, 150)
+
+                     }, 5000 );
+                        $('.form').hide()
+                            setTimeout(function(){
+                                    $('.form').fadeIn()
+                        }, 6000)
+
+                    setTimeout(function(){
+                        $('.loader').fadeOut(500);
+                        
+                        $('.wrapper').fadeIn(500);
+                        $('#wings').fadeIn(700);
+                    }, 4000);
+
+        </script>
+    
+</body>
+</html>

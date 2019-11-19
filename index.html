@@ -4,156 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Wings</title>
-
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
+    
     <!-- SEO WITH META TAGS -->
 
   <meta name="description" content="Official Website of Wings 2020 - National Level event hosted by Government College of Engineering Aurangabad">
 
-    <meta name="author" content="Government College of Engineering Aurangabad">
+  <meta name="author" content="Government College of Engineering Aurangabad">
 
-    <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow" />
 
-    <meta name="keywords" content="Wings, wings2020, geca, government college of engineering aurangabad, hackathon, robowars, nitroracing, make in geca, coder of the year, cicada, drone racing, innovation, aurangabad, marathwada, maharashtra, india, technical event">
+  <meta name="keywords" content="Wings, wings2020, geca, government college of engineering aurangabad, hackathon, robowars, nitroracing, make in geca, coder of the year, cicada, drone racing, innovation, aurangabad, marathwada, maharashtra, india, technical event">
 
-    <meta name="copyright" content="Government College of Engineering Aurangabad">
+  <meta name="copyright" content="Government College of Engineering Aurangabad">
 
-    <meta name="DC.title" content="Wings Official Website">
+  <meta name="DC.title" content="Wings Official Website">
 
-  <!-- END SEO WITH META TAGS -->
+<!-- END SEO WITH META TAGS -->
 
-    <script src="scripts/three.r92.min.js"></script>
-    <script src="scripts/vanta.fog.min.js"></script>
-
-            <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-        <link rel="stylesheet" href="css/index5.css">
-
+    <script src="js/dat_jui.js"></script>
+    <script src="js/particle.js"></script>
+    <style>
+   
+    </style>
+    <link rel="stylesheet" href="css/again.css">
 </head>
-<body>
 
-        <!-- Loader -->
-            <div class="loader">
-            <div class="blobs">
-                <div class="blob-center"></div>
-                <div class="blob"></div>
-                <div class="blob"></div>
-                <div class="blob"></div>
-                <div class="blob"></div>
-                <div class="blob"></div>
-                <div class="blob"></div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <defs>
-                <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-            </defs>
-            </svg>
-            <div class="loading-container"><h3>Loading</h3></div>
-            
-            </div>
-
-
-        <div class="wrapper" >
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8" id="artiststhumbnail"> <img id="wings" src="images/Wings Logo.png" class="responsive" alt="wings logo"> </div>
-                    <div class="col-md-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12" style="text-align: center">
-                            <div class="coming-soon">
-                                    
-                                    <h1 class="ml12">COMING SOON</h1>
-                              
-                              
-                                  </div>
-                    </div>     
-                            
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <!--   <div class="quote">
-                                  <p>Intellegance with ambitions</p>
-                                </div> -->
-                                <form action="">
-                                <div class="form" action style="margin-top: 5%">
-                                    
-                                        <div class="form-wrapper">
-                                        <input class="input-mail" type="email" placeholder="Eg. yourmail@mail.com">
-                                        <button type="submit" class="notify-me-btn"> Notify me</button>
-                                        </div>
-                                    
-                                      </div>
-                                    </form>
-                                </div>
-                    </div>
-                </div>
-            </div>
-                
-                
-
+<body id="particle-slider" >
+        <div id="particles-js" style="z-index: -10;"></div>
+    
+    
+                    <div class="slides" style="z-index: -1">
+                      <div id="first-slide"  class="slide" data-src="images/coming_soon_2.png">
+                        </div>
+                      </div>
+                        <canvas  class="draw"></canvas>
+                        <div class="wings-container" style="z-index: 999">
+                                <img class="wings-image" style="z-index: 999" src="images/wingswhite.png"  alt="wings logo">
+                        </div>
+                        <div class="button-div">
+                                <button class="btn draw-border">Let Me Know!</button>
+                        </div>
+                        
+              
         <script>
                 
-                VANTA.FOG({ el: ".wrapper",
-                                highlightColor: 0xb122de,
-                    midtoneColor: 0x0C3BF6,
-                    lowlightColor: 0xF33C27,
-                    baseColor: 0x29F2E3,
-                    speed: 2.40,
-                    });
+            var init = function(){
+            var isMobile = navigator.userAgent &&
+                navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
+            var isSmall = window.innerWidth < 1000;
+            
+            var ps = new ParticleSlider({
+                ptlGap: isMobile || isSmall ? 3 : 0,
+                ptlSize: isMobile || isSmall ? 3 : 1,
+                width: 1e9,
+                height: 1e9
+            });
+                
+            (window.addEventListener
+            ? window.addEventListener('click', function(){ps.init(true)}, false)
+            : window.onclick = function(){ps.init(true)});
+            }
 
-                $('#wings').hide();
-                $('.wrapper').hide();
-                setTimeout(function(){ 
-                        
+            var initParticleSlider = function(){
+            var psScript = document.createElement('script');
+            (psScript.addEventListener
+                ? psScript.addEventListener('load', init, false)
+                : psScript.onload = init);
+            psScript.src = 'js/ps09.js';
+                psScript.setAttribute('type', 'text/javascript');
+            document.body.appendChild(psScript);
+            }
+                
+            (window.addEventListener
+            ? window.addEventListener('load', initParticleSlider, false)
+            : window.onload = initParticleSlider);
 
-                // Wrap every letter in a span
-                    var textWrapper = document.querySelector('.ml12');
-                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-                    
-                    anime.timeline({loop: false})
-                    .add({
-                        targets: '.ml12 .letter',
-                        translateX: [40,0],
-                        translateZ: 0,
-                        opacity: [0,1],
-                        easing: "easeOutExpo",
-                        duration: 2000,
-                        delay: (el, i) => 500 + 30 * i
-                        });
-                        setTimeout(function(){            $('.ml12').css("visibility", "visible");
-                        }, 150)
+            const particlesJSON = {
+"particles": {
+        "number": {
+            "value": 50,
+            "density": {
+                "enable": true,
+                "value_area": 700 //Denser the smaller the number.
+            }
+        },
+        "color": { //The color for every node, not the connecting lines.
+            "value": "#01579b" //Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
+        },
+        "shape": {
+            "type": "circle", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
+            "stroke": { //The border
+                "width": 1,
+                "color": "#145ea8"
+            },
+            "polygon": { //if the shape is a polygon
+                "nb_sides": 5
+            },
+            "image": { //If the shape is an image
+                "src": "",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.7,
+            "random": true
+        },
+        "size": {
+            "value": 10,
+            "random": true
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 200, //The radius before a line is added, the lower the number the more lines.
+            "color": "#007ecc",
+            "opacity": 0.5,
+            "width": 2
+        },
+        "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "top", //Move them off the canvas, either "none", "top", "right", "bottom", "left", "top-right", "bottom-right" et cetera...
+            "random": true,
+            "straight": false, //Whether they'll shift left and right while moving.
+            "out_mode": "out", //What it'll do when it reaches the end of the canvas, either "out" or "bounce".
+            "bounce": false, 
+            "attract": { //Make them start to clump together while moving.
+                "enable": true,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+  //Negate the default interactivity
+  "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": false,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": false,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 800,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 800,
+                "size": 80,
+                "duration": 2,
+                "opacity": 0.8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 400,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+}
 
-                     }, 5000 );
-                        $('.form').hide()
-                            setTimeout(function(){
-                                    $('.form').fadeIn()
-                        }, 6000)
-
-                    setTimeout(function(){
-                        $('.loader').fadeOut(500);
-                        
-                        $('.wrapper').fadeIn(500);
-                        $('#wings').fadeIn(700);
-                    }, 4000);
+    particlesJS("particles-js", particlesJSON)
 
         </script>
-    
+
 </body>
 </html>

@@ -1,0 +1,150 @@
+ 
+    html, body {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        z-index: 999;
+   }
+    html .slides, html > .dg, body .slides, body > .dg {
+        display: none;
+   }
+    @media (min-width: 1000px) {
+        
+               body > .dg {
+                   display: block;
+               }
+           }
+           .wings-container{
+               width: 100%;
+               padding: 0 auto;
+               /* border: 1px solid white; */
+               background-color: transparent;
+               background: transparent;
+           }
+           .wings-image{
+               height: 300px;
+               width:auto; 
+               margin-bottom: 0;
+               margin-right: auto;
+               margin-left:  auto;
+               margin-top: 0;
+               display: block;
+               z-index: 5 !important;
+           }
+           @media(max-width: 902px){
+               .wings-image{
+                   height: 250px;
+                   widows: auto;
+               }
+           }
+           @media(max-width: 768px){
+               .wings-image{
+                   height: 200px;
+                   widows: auto;
+                   margin-top: 10%;
+               }
+           }
+           canvas{
+               padding-top: 0; 
+               position: fixed; 
+               left: 0; 
+               top: 0;
+               /* border: 1px solid white; */
+               overflow: visible !important;
+               z-index: 0;
+           }
+   
+
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #27A9B7;
+    color: #58afd1;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+.draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+.draw-border:hover {
+    color: #01579b;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+    border-color: #01579b;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+    margin: auto;
+    display: block;
+    
+}
+.btn:focus {
+    outline: 2px dotted #55d7dc;
+}
+.button-div{
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    /* display: flex;
+    align-items: center; */
+}
+@Media(max-width: 1200px){
+    .button-div{
+        padding-top: 15%;
+    }
+}
+
+@media(max-width: 902px){
+    .button-div{
+        padding-top: 20%;
+    }
+}
+@media(max-width: 768px){
+    .button-div{
+        padding-top: 28%;
+    }
+}
+@media(max-width: 600px){
+    .button-div{
+        padding-top: 40%;
+    }
+}
+@media(max-width: 414px){
+    .button-div{
+        padding-top: 45%;
+    }
+}
