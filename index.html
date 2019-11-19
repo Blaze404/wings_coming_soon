@@ -235,8 +235,12 @@
                 setTimeout(function(){
                     $('.loader').fadeOut();
                     $('#particles-js').fadeIn();
-                    $('.button-div').fadeIn();
+                    
                     $('.wings-container').fadeIn();
+
+                    setTimeout(function(){
+                        $('.button-div').fadeIn();
+                    }, 4100)
                    
                 }, 2500)
             </script>
