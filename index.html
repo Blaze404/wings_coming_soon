@@ -27,10 +27,9 @@
     <script src="js/particle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <style>
    
-    </style>
     <link rel="stylesheet" href="css/again.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body id="particle-slider" >
@@ -81,9 +80,25 @@
                                 <img class="wings-image" style="z-index: 999" src="images/wingswhite.png"  alt="wings logo">
                         </div>
                         <div class="button-div">
-                                <button class="btn draw-border">Let Me Know!</button>
+                                <button onclick="document.querySelector('#confirm-modal').showModal()" class="btn1 draw-border">Let Me Know!</button>
                         </div>
                         
+                        <dialog id="confirm-modal" class="modal">
+                                <div class="modal-content">
+                                  <h2 class="modal-title">Please tell us your email</h2>
+                                  <p class="modal-description">
+                                    <input id="email" name="email" type="email">
+                                  </p>
+                                  <div class="modal-options">
+                                    <button
+                                      class="btn btn-round btn-fill btn-fill-left option confirm"
+                                      data-text="Notify Me"
+                                      onclick="handle_query()"
+                                    ></button>
+                                    
+                                  </div>
+                                </div>
+                              </dialog>
               
         <script>
                 
@@ -243,6 +258,11 @@
                     }, 4100)
                    
                 }, 2500)
+
+                function handle_query(){
+                    document.querySelector('#confirm-modal').close()
+                }
+
             </script>
 
 </body>
