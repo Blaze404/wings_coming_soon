@@ -1,30 +1,106 @@
-@import url('https://fonts.googleapis.com/css?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-html, body {
-    background-color: black;
+body,html{
+  margin:0px;
+  padding:0px;
+  font-family:'Poppins', sans-serif;
+  letter-spacing:0.5px;
+  background-color: black;
+}
+.wrapper{
+  
+  height:100vh;
+  background-color:transparent;
+  z-index: 5;
+}
+.heading h4{
+  color:white;
+  font-size:3rem;
+}
+.heading h3{
+  font-size:2rem;
+  color:white;
+}
+.heading{
+  text-align:center;
+  padding-top:4rem;
+}
+.responsibilites{
+  padding-top:5rem;
+  color:white;
+}
+
+
+
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #27A9B7;
+    color: #58afd1;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+.draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+.draw-border:hover {
+    color: #01579b;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+    border-color: #01579b;
+    transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden
 }
-.board{
-    height: 100%;
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+.btn1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.5rem 'Signika Negative', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}
+.btn1:focus {
+    outline: 2px dotted #55d7dc;
+    text-decoration: none
+}
+.button{
+    width: min-content;
+
+}
+
+.button-div{
+    
+    /* border: 1px solid white; */
+    /* height: 100%; */
     width: 100%;
-    border: 1px solid wheat;
-}
-.pane{
-    min-height: 50vh;
-}
-#one{
-    background-color: aquamarine;
-}
-#two{
-    background-color: blueviolet
-}
-#three{
-    background-color: brown;
-}
-#four{
-    background-color: antiquewhite;
+    /* padding-top: 10%; */
+    display: block;
+    /* display: flex;
+    align-items: center; */
 }

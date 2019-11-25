@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Campus Ambassador</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/ambassador.css">
+
 </head>
 <body>
+    <div id="particles-js" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%;"></div>
+
     <div class="wrapper">
         <div class="container">
           <div class="heading">
@@ -40,6 +55,120 @@
               </ul>
           </div>
         </div>
+        <div class="button-div" style="z-index: 6">
+            <a class="btn1 draw-border typeform-share button" href="https://mustafaqazi.typeform.com/to/nd4YqI" data-mode="popup" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Apply</a>       
+        </div>
+        <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <!-- <button>Hello</button> -->
       </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+      <script>
+      
+      const particlesJSON = {
+"particles": {
+        "number": {
+            "value": 50,
+            "density": {
+                "enable": true,
+                "value_area": 700 //Denser the smaller the number.
+            }
+        },
+        "color": { //The color for every node, not the connecting lines.
+            "value": "#01579b" //Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
+        },
+        "shape": {
+            "type": "circle", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
+            "stroke": { //The border
+                "width": 1,
+                "color": "#145ea8"
+            },
+            "polygon": { //if the shape is a polygon
+                "nb_sides": 5
+            },
+            "image": { //If the shape is an image
+                "src": "",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.7,
+            "random": true
+        },
+        "size": {
+            "value": 10,
+            "random": true
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 200, //The radius before a line is added, the lower the number the more lines.
+            "color": "#007ecc",
+            "opacity": 0.5,
+            "width": 2
+        },
+        "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "top", //Move them off the canvas, either "none", "top", "right", "bottom", "left", "top-right", "bottom-right" et cetera...
+            "random": true,
+            "straight": false, //Whether they'll shift left and right while moving.
+            "out_mode": "out", //What it'll do when it reaches the end of the canvas, either "out" or "bounce".
+            "bounce": false, 
+            "attract": { //Make them start to clump together while moving.
+                "enable": true,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+  //Negate the default interactivity
+  "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": false,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": false,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 800,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 800,
+                "size": 80,
+                "duration": 2,
+                "opacity": 0.8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 400,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+}
+
+particlesJS("particles-js", particlesJSON)
+
+      </script>
+
 </body>
 </html>
