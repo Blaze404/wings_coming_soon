@@ -109,7 +109,7 @@
     border: none;
     cursor: pointer;
     line-height: 1.5;
-    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    font: 700 1.2rem 'Signika Negative', sans-serif;
     padding: 1em 2em;
     letter-spacing: 0.05rem;
     margin: auto;
@@ -119,38 +119,58 @@
 .btn1:focus {
     outline: 2px dotted #55d7dc;
 }
+.relocation{
+  margin-top: 50px;
+  /* display: inline; */
+  display: flex;
+  /* border-top: 1px solid white;
+    border-bottom: 2px solid gold ; */
+    width: 100%;
+}
+.relocation a{
+  font: 600 1rem 'Signika Negative', sans-serif;
+  text-decoration: none;
+
+}
 .button-div{
-    /* border: 1px solid white; */
+    
+    margin-top: 16vh;
     height: 100%;
     width: 100%;
-    padding-top: 10%;
+    /* padding-top: 10%; */
+    display: block;
     /* display: flex;
     align-items: center; */
 }
 @Media(max-width: 1200px){
     .button-div{
-        padding-top: 15%;
+        /* padding-top: 15%; */
+        margin-top: 21vh;
     }
 }
 
 @media(max-width: 902px){
     .button-div{
-        padding-top: 20%;
+        /* padding-top: 20%; */
+        margin-top: 26vh;
     }
 }
 @media(max-width: 768px){
     .button-div{
-        padding-top: 28%;
+        /* padding-top: 28%; */
+        margin-top: 31vh;
     }
 }
 @media(max-width: 600px){
     .button-div{
-        padding-top: 40%;
+        /* padding-top: 40%; */
+        margin-top: 36vh;
     }
 }
 @media(max-width: 414px){
     .button-div{
-        padding-top: 45%;
+        /* padding-top: 45%; */
+        margin-top: 41vh;
     }
 }
 
