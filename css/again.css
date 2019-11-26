@@ -145,7 +145,7 @@
 @Media(max-width: 1200px){
     .button-div{
         /* padding-top: 15%; */
-        margin-top: 21vh;
+        margin-top: 20vh;
     }
 }
 
@@ -158,19 +158,19 @@
 @media(max-width: 768px){
     .button-div{
         /* padding-top: 28%; */
-        margin-top: 35vh;
+        margin-top: 25vh;
     }
 }
 @media(max-width: 600px){
     .button-div{
         /* padding-top: 40%; */
-        margin-top: 30vh;
+        margin-top: 26vh;
     }
 }
 @media(max-width: 414px){
     .button-div{
         /* padding-top: 45%; */
-        margin-top: 35vh;
+        margin-top: 27vh;
     }
 }
 
