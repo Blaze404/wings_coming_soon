@@ -1,0 +1,142 @@
+body {
+    background: #333;
+    padding: 70px 0;
+    font: 15px/20px Arial, sans-serif;
+  }
+  
+  .container_2 {
+    margin: 0 auto;
+    margin-left: 2%;
+    margin-top: 10%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 500px;
+    line-height: 70px;
+    /* transform: rotateZ(90deg); */
+    /* border: 5px solid red; */
+  }
+  .item-text{
+      /* transform: rotateZ(-90deg) !important; */
+      color: white;
+      
+      /* border: 2px solid red; */
+      display: block;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      backface-visibility: hidden;
+      
+      /* border: 2px solid red; */
+  }
+  
+  .carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    /* border: 2px solid red; */
+    cursor: grab;
+  }
+  .item {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 100px;
+    height: 70px;
+   
+    text-align: left;
+    font-size: 1em;
+    padding-left: 0;
+    color: #FFF;
+    opacity: 1;
+    border-radius: 10px;
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+  @media(max-width: 600px){
+    .carousel{
+      top: 5%;
+    }
+    .item{
+      height: 60px;
+      width: 80px;
+      font-size: 0.8em;
+    }   
+    .container_2{
+      line-height: 60px;
+    } 
+    .hackathon, .dronix, .robowar, .nitro, .mig, .coty, .cicada, .cycloway{
+      transform: translateZ(-100px);
+    }
+  }
+  @media(max-width: 450px){
+    
+  }
+  
+  
+  
+  .hackathon {
+    transform: rotateX(0deg) translateZ(100px);
+    
+    background: #ed1c24;
+  }
+  .dronix {
+    transform: rotateX(45deg) translateZ(100px);
+    background: #0072bc;
+  }
+  .robowar {
+    transform: rotateX(90deg) translateZ(100px);
+    background: #8c6239;
+  }
+  .nitro {
+    transform: rotateX(135deg) translateZ(100px);
+    background: #f26522;
+  }
+  .mig {
+    transform: rotateX(180deg) translateZ(100px);
+    background: #630460;
+  } 
+  .coty {
+    transform: rotateX(225deg) translateZ(100px);
+    background: #ed1c24;
+  }
+  .cicada {
+    transform: rotateX(270deg) translateZ(100px);
+    background: #8c6239;
+  }
+  .cycloway {
+    transform: rotateX(315deg) translateZ(100px);
+    background: #39b54a;
+  }
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+  }
+  
+  .next, .prev {
+    color: #444;
+    position: absolute;
+    top: 100px;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    background: #CCC;
+    border-radius: 5px;
+    border-top: 1px solid #FFF;
+    box-shadow: 0 5px 0 #999;
+    transition: box-shadow 0.1s, top 0.1s;
+  }
+ 
+  }
+  .next { right: 5em; }
+  .prev { left: 5em; }
+  
