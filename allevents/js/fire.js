@@ -4,6 +4,7 @@ console.log(currdeg);
 
 index = 0;
 all_events = ["hackathon", "dronix", "robowar", "nitro", "mig", "coty", "cicada", "cycloway"];
+// event_backgrounds = ["hackathon.jpg"]
 
 $(".next").on("click", { d: "n" }, rotate);
 $(".prev").on("click", { d: "p" }, rotate);
@@ -51,6 +52,8 @@ function getCurrentEventFromDegree(ind){
 function updateView(ind){
     data = getCurrentEventFromDegree(ind);
     document.getElementById('page-title').innerHTML = data[1];
+    $(".background").css("background-image", "url(../assets/images/" + all_events[ind] +".jpg)");
+
 }
 
 function rotate(e){

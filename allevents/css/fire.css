@@ -134,9 +134,21 @@ body {
     border-top: 1px solid #FFF;
     box-shadow: 0 5px 0 #999;
     transition: box-shadow 0.1s, top 0.1s;
-  }
  
   }
   .next { right: 5em; }
   .prev { left: 5em; }
   
+
+  .navbar-menu{
+    z-index: 9999999;
+    color: white;
+    cursor: pointer;
+    background-color: gray;
+    margin-bottom: 0;
+    height: 1.5em;
+    position: fixed;
+    right: 25px;
+    top: 10px;
+    font-size: 2em;
+  }
