@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+body{
+    color:white;
+    font-weight:bold;
+    letter-spacing:0.1rem;
+    font-family: 'Montserrat',sans-serif !important;
+    margin:0px;
+    padding:0px;
+    height:100%;
+  }
+  html{
+    height:100%;
+  }
+  .logo img{
+    height: 60px;
+  }
+  .robowar-wrapper{
+    color:white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./img/robowar.jpg') center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .nitro-wrapper{
+    color:white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./img/nitrorace.jpg') center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .wrapper{
+      color:white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./img/coty.jpg') center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .navbar{
+    background-color:transperant;
+    padding:2rem 4rem !important;
+    display:flex;
+    justify-content:space-between;
+  }
+  .menu-item ul{
+    margin:0px 15px;
+    list-style:none;
+    display:flex;
+  }
+  .menu-item ul li{
+    margin:0px 10px;
+  }
+  .menu-item ul li:hover{
+    color:#3EC79B;
+    cursor:pointer;
+  }
+  .event-name{
+  /*   background-color:black; */
+    width:100vw;
+    display:flex;
+  /*   background-color:black; */
+  /*   margin-top:5rem; */
+    margin-top:15%;
+  }
+  .event-name h4{
+    margin-top:auto;
+  /* padding:0px 2px !important; */
+    margin:0px 2rem !important;
+  }
+  .event-name .heading {
+    margin:auto;
+    text-align:center;
+  }
+  .event-name .heading h4{
+    margin:auto;
+  /*   background-color:black; */
+    font-size:9rem;
+  }
+  
+
+  .adrk-btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+  }
+  .about-us{
+    background-color:white;
+    color:black;
+    padding-bottom: 4rem;
+  }
+
+.about-us{
+    padding-top: 4rem;
+}
+.about-us h4{
+    font-size: 7rem;
+    font-weight: bold;
+}
+.event-desc{
+    margin:auto;
+}
+.rules{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: white;
+    background-color: black;
+}
+.rule{
+    margin:auto;
+}
+.rule h4{
+    margin:auto;
+    font-size: 7rem;
+    font-weight: bold;
+}
+.rounds{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: black;
+  background-color: white;
+}
+.round{
+  display: flex;
+}
+.card{
+  height: 100%;
+  padding: 20px;
+}
+.card ul{
+  padding: 0px;
+  list-style: none;
+}
+.footer{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: black;
+  color: white;
+}
+.flex{
+  display: flex;
+}
+.adrk{
+  text-align:center;
+}
