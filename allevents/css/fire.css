@@ -56,6 +56,8 @@ body {
     border-radius: 10px;
     text-align: center;
     /* border: 2px solid red; */
+    border-left: 5px solid black;
+    border-right: 5px solid black;
   }
   @media(max-width: 600px){
     .carousel{
@@ -65,6 +67,7 @@ body {
       height: 60px;
       width: 80px;
       font-size: 0.8em;
+
     }   
     .container_2{
       line-height: 60px;
@@ -125,6 +128,7 @@ body {
   .next, .prev {
     color: #444;
     position: absolute;
+    display: block;
     top: 100px;
     padding: 1em 2em;
     font-size: 1em;
@@ -134,10 +138,11 @@ body {
     border-top: 1px solid #FFF;
     box-shadow: 0 5px 0 #999;
     transition: box-shadow 0.1s, top 0.1s;
- 
+    
+    /* border: px solid black */
   }
-  .next { right: 5em; }
-  .prev { left: 5em; }
+  .next { left: 5em; }
+  .prev { left: 0em; }
   
 
   .navbar-menu{
