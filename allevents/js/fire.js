@@ -53,7 +53,7 @@ function updateView(ind){
     data = getCurrentEventFromDegree(ind);
     document.getElementById('page-title').innerHTML = data[1];
     $(".background").css("background-image", "url(../assets/images/" + all_events[ind] +".jpg)");
-
+    $('#next-loc').attr("href", "events" + data[i] + "html");
 }
 
 function rotate(e){
