@@ -11,13 +11,58 @@ body{
   }
   html{
     height:100%;
-  }
+  } 
   .logo img{
     height: 60px;
   }
   .robowar-wrapper{
     color:white;
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./img/robowar.jpg') center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .dronix-wrapper{
+    color:white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./allevents/assets/images/dronix.jpg') center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+  } 
+  .coty-wrapper{
+    color:white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./img/robowar.jpg') center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .cycloway-wrapper{
+    color:white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./img/robowar.jpg') center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .hackathon-wrapper{
+    color:white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./allevents/assets/images/hackathon.jpg') center center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .make-in-geca-wrapper{
+    color:white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url('./allevents/assets/images/mig.jpg') center center;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
