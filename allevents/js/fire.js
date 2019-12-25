@@ -52,8 +52,8 @@ function getCurrentEventFromDegree(ind){
 function updateView(ind){
     data = getCurrentEventFromDegree(ind);
     document.getElementById('page-title').innerHTML = data[1];
-    $(".background").css("background-image", "url(../assets/images/" + all_events[ind] +".jpg)");
-    $('#next-loc').attr("href", "events" + data[i] + "html");
+    // $(".background").css("background-image", "url(../assets/images/" + all_events[ind] +".jpg)");
+    $('.next-loc').attr("href", "../events/" + all_events[ind] + ".html");
 }
 
 function rotate(e){

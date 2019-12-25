@@ -643,7 +643,7 @@ footer {
   top: 42%; }
 
 .background {
-  background: url(../../images/hackathon.jpg) no-repeat 50% 100%;
+  background: url(../../images/background.jpg) no-repeat 50% 100%;
   transition: background 1s ease-out;
   bottom: 96px;
   background-size: cover;
