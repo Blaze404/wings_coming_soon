@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from rallyinteractive.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2020 16:04:55 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+
+    <script src="static/js/rally.min.js"></script>
+    <link href="static/css/rally.min.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154318312-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-154318312-1');
+    </script>
+
+    
+
+    <title>RALLY</title>
+    <meta name="description" content="Rally is an interactive product studio specializing in UX/UI design and front-end development, building beautiful products and software with brands like Google, Nike, and National Geographic.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@letsgorally">
+    <meta name="twitter:title" content="RALLY">
+    <meta name="twitter:description" content="Rally is an interactive product studio specializing in UX/UI design and front-end development, building beautiful products and software with brands like Google, Nike, and National Geographic.">
+    <meta name="twitter:image" content="https://rally-media.s3.amazonaws.com/social/tw-card-rally.png">
+
+    <meta property="og:title" content="RALLY">
+    <meta property="og:description" content="Rally is an interactive product studio specializing in UX/UI design and front-end development, building beautiful products and software with brands like Google, Nike, and National Geographic.">
+    <meta property="og:image" content="https://rally-media.s3.amazonaws.com/social/fb-card-rally.png">
+</head>
+<body class="fonts-loading">
+    <canvas id="ribbon"></canvas>
+
+    <div id="logo">
+        <a href="index.html" class="no-barba">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43.812" height="11.375" viewBox="0 0 43.812 11.375">
+                <path fill="#1b1b1b" fill-rule="evenodd" d="M69.38,55.682H65.728L62.959,51.3h-0.03v4.378H60V44.3h4.385c2.23,0,3.921,1.072,3.921,3.5a3.056,3.056,0,0,1-2.47,3.216Zm-6.45-6.28h0.285c0.958,0,2.035-.181,2.035-1.419s-1.077-1.419-2.035-1.419H62.929V49.4Zm9.519,4.3L71.67,55.682H68.557L72.9,44.3h3.2l4.25,11.383H77.222L76.489,53.7H72.448Zm2.05-5.888h-0.03L73.256,51.44H75.7Zm9.4,5.359h3.517v2.506h-6.45V44.3H83.9v8.877Zm7.109,0h3.517v2.506H88.073V44.3h2.933v8.877Zm1.56-8.877h3.517l2.111,3.095L100.3,44.3h3.517l-4.16,5.918v5.465H96.726V50.217Z" transform="translate(-60 -44.313)"/>
+            </svg>
+        </a>
+    </div>
+
+    <a href="#" id="menu-button">
+      <div></div><div></div><div></div>
+    </a>
+
+    <div id="menu">
+        <div id="menu-wrapper">
+            <ul id=menu-items>
+                <li data-section="work"><a href="index.html" class="no-barba">Home</a></li>
+                <li data-section="studio"><a href="studio/index.html" class="no-barba">Profile</a></li>
+                <li data-section="studio"><a href="studio/index.html" class="no-barba">Accomodation</a></li>
+                
+                
+                <li data-section="contact"><a href="contact/index.html" class="no-barba">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="follow-bar">
+            <div id="follow">
+                <p>Follow</p>
+                <span></span>
+            </div>
+            <a class="follow-icon" href="https://dribbble.com/rally" target="_blank">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rull="evenodd" d="M1529.13,775.782a8,8,0,1,1,8-8A8.012,8.012,0,0,1,1529.13,775.782Zm6.74-6.906a10.015,10.015,0,0,0-4.25-.292,29.541,29.541,0,0,1,1.32,4.872A6.8,6.8,0,0,0,1535.87,768.876Zm-4.08,5.206a27.925,27.925,0,0,0-1.45-5.182l-0.05.015a9.368,9.368,0,0,0-5.36,4.268A6.819,6.819,0,0,0,1531.79,774.082Zm-7.74-1.721a10.819,10.819,0,0,1,5.55-4.51c0.09-.028.18-0.056,0.27-0.081-0.17-.388-0.36-0.777-0.55-1.16a25.217,25.217,0,0,1-7.03.973v0.209A6.817,6.817,0,0,0,1524.05,772.361Zm-1.61-5.969a25.474,25.474,0,0,0,6.31-.832,43.371,43.371,0,0,0-2.53-3.952A6.848,6.848,0,0,0,1522.44,766.392Zm5.08-5.244a36.29,36.29,0,0,1,2.55,4,7.687,7.687,0,0,0,3.58-2.469,6.777,6.777,0,0,0-4.52-1.722A6.876,6.876,0,0,0,1527.52,761.148Zm6.89,2.322a9,9,0,0,1-3.81,2.695c0.16,0.325.31,0.656,0.45,0.99l0.15,0.352a16,16,0,0,1,4.76.22A6.789,6.789,0,0,0,1534.41,763.47Z" transform="translate(-1521.12 -759.781)"/>
+                </svg>
+            </a>
+            <a class="follow-icon" href="https://www.instagram.com/rallyinteractive/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1531,847.441c2.14,0,2.39.009,3.23,0.047a4.445,4.445,0,0,1,1.49.276,2.5,2.5,0,0,1,.92.6,2.54,2.54,0,0,1,.6.92,4.308,4.308,0,0,1,.27,1.485c0.04,0.844.05,1.1,0.05,3.233s-0.01,2.389-.05,3.233a4.308,4.308,0,0,1-.27,1.485,2.54,2.54,0,0,1-.6.92,2.5,2.5,0,0,1-.92.6,4.445,4.445,0,0,1-1.49.276c-0.84.038-1.09,0.046-3.23,0.046s-2.39-.008-3.23-0.046a4.445,4.445,0,0,1-1.49-.276,2.5,2.5,0,0,1-.92-0.6,2.54,2.54,0,0,1-.6-0.92,4.308,4.308,0,0,1-.27-1.485c-0.04-.844-0.05-1.1-0.05-3.233s0.01-2.389.05-3.233a4.308,4.308,0,0,1,.27-1.485,2.54,2.54,0,0,1,.6-0.92,2.5,2.5,0,0,1,.92-0.6,4.445,4.445,0,0,1,1.49-.276c0.84-.038,1.09-0.047,3.23-0.047m0-1.441c-2.17,0-2.45.009-3.3,0.048a5.871,5.871,0,0,0-1.94.372,4.071,4.071,0,0,0-2.34,2.34,5.848,5.848,0,0,0-.37,1.942c-0.04.853-.05,1.125-0.05,3.3s0.01,2.445.05,3.3a5.848,5.848,0,0,0,.37,1.942,4.071,4.071,0,0,0,2.34,2.34,5.871,5.871,0,0,0,1.94.372c0.85,0.039,1.13.048,3.3,0.048s2.45-.009,3.3-0.048a5.871,5.871,0,0,0,1.94-.372,4.071,4.071,0,0,0,2.34-2.34,5.848,5.848,0,0,0,.37-1.942c0.04-.853.05-1.125,0.05-3.3s-0.01-2.445-.05-3.3a5.848,5.848,0,0,0-.37-1.942,4.071,4.071,0,0,0-2.34-2.34,5.871,5.871,0,0,0-1.94-.372c-0.85-.039-1.13-0.048-3.3-0.048h0Zm0,3.892a4.108,4.108,0,1,0,4.11,4.108A4.109,4.109,0,0,0,1531,849.892Zm0,6.775a2.667,2.667,0,1,1,2.67-2.667A2.671,2.671,0,0,1,1531,856.667Zm5.23-6.937a0.96,0.96,0,1,1-.96-0.96A0.96,0.96,0,0,1,1536.23,849.73Z" transform="translate(-1523 -846)"/>
+                </svg>
+            </a>
+            <a class="follow-icon" href="https://twitter.com/letsgorally" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                    d="M16.000,2.471 C15.411,2.739 14.779,2.918 14.115,3.001 C14.793,2.584 15.313,1.925 15.558,1.140 C14.924,1.526 14.221,1.805 13.473,1.956 C12.875,1.302 12.021,0.894 11.077,0.894 C9.265,0.894 7.795,2.400 7.795,4.257 C7.795,4.521 7.824,4.778 7.880,5.024 C5.152,4.885 2.732,3.545 1.114,1.509 C0.831,2.006 0.669,2.584 0.669,3.201 C0.669,4.367 1.249,5.397 2.129,6.000 C1.592,5.982 1.085,5.831 0.643,5.580 C0.642,5.594 0.642,5.608 0.642,5.622 C0.642,7.251 1.774,8.612 3.275,8.920 C3.000,8.997 2.710,9.039 2.411,9.039 C2.199,9.039 1.994,9.018 1.793,8.978 C2.211,10.314 3.423,11.288 4.860,11.314 C3.736,12.217 2.321,12.754 0.783,12.754 C0.518,12.754 0.257,12.738 -0.000,12.707 C1.452,13.661 3.178,14.218 5.032,14.218 C11.070,14.218 14.372,9.093 14.372,4.647 C14.372,4.502 14.369,4.357 14.362,4.212 C15.003,3.737 15.560,3.145 16.000,2.471 Z"/>
+                </svg>
+            </a>
+            <a class="follow-icon" href="https://www.facebook.com/letsgorally/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path d="M569,2080.01H557a2.006,2.006,0,0,0-2,2V2094a2.006,2.006,0,0,0,2,2h6.069v-5.73h-1.916v-2.5h1.916v-1.25a3.31,3.31,0,0,1,3.245-3.44h1.766v2.82H566.5a0.485,0.485,0,0,0-.535.57v1.3h2.115v2.5h-2.115V2096H569a2.006,2.006,0,0,0,2-2v-11.99A2.006,2.006,0,0,0,569,2080.01Z" transform="translate(-555 -2080)"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        if (location.hostname.indexOf('rally') == -1) {
+          // Site.toggleGrid();
+          // Site.toggleStats();
+        }
+
+        Ribbon.init(document.getElementById('ribbon'));
+    </script>
+
+    <div id="wrapper">
+        <div class="page-content home-page">
+            
+
+    
+        <ul id="bullets"
+            style="--selection-color: rgba(116,1,240,0.25);">
+            
+            <li>
+                <a href="#jaybird">
+                    <span>W</span>
+                    <span class="project-name"><span>W</span>ings</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#in-car-navigation">
+                    <span>D</span>
+                    <span class="project-name"><span>D</span>ronix</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#tactical-mapping">
+                    <span>N</span>
+                    <span class="project-name"><span>N</span>itrorace</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#inside-design">
+                    <span>R</span>
+                    <span class="project-name"><span>R</span>obo War</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#youmap">
+                    <span>M</span>
+                    <span class="project-name"><span>M</span>ake in Geca</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#chat">
+                    <span>C</span>
+                    <span class="project-name"><span>C</span>oder of the year</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#franklin-square">
+                    <span>S</span>
+                    <span class="project-name"><span>S</span>ah</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#snkrs">
+                    <span>C</span>
+                    <span class="project-name"><span>C</span>ycloway</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#snkrs">
+                    <span>C</span>
+                    <span class="project-name"><span>C</span>icada 3301</span>
+                </a>
+            </li>
+            
+           
+            
+        </ul>
+        <ul id="pages">
+            
+            <li id="jaybird"
+                class='page client-hidden'
+                style="--highlight-primary: #7401f0; --selection-color: rgba(116,1,240,0.25);"
+                data-slug="jaybird"
+                data-primarycolor="#7b00ff"
+                data-secondarycolor="#6d02e0"
+                data-midcolor="#7401f0"
+                data-selection-color="rgba(116,1,240,0.25)">
+                <a href="case-studies/jaybird/index.html">
+                    <h2>Wings 2020</h2>
+                    
+                    <p>Wings 2020 is a National Level annual technical event of Govt College of Engineering</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="in-car-navigation"
+                class='page '
+                style="--highlight-primary: #3c5df1; --selection-color: rgba(60,93,241,0.25);"
+                data-slug="in-car-navigation"
+                data-primarycolor="#4264FB"
+                data-secondarycolor="#3556e7"
+                data-midcolor="#3c5df1"
+                data-selection-color="rgba(60,93,241,0.25)">
+                <a href="case-studies/in-car-navigation/index.html">
+                    <h2>Dronix</h2>
+                    <h3>Wings 2020</h3>
+                    <p>DRONIX is an event of WINGS2k20. The main task of this competition is to design a rotary wing UAV to carry and drop payload at designated area through an obstacle course</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="tactical-mapping"
+                class='page '
+                style="--highlight-primary: #ec594b; --selection-color: rgba(236,89,75,0.25);"
+                data-slug="tactical-mapping"
+                data-primarycolor="#FF6152"
+                data-secondarycolor="#D85144"
+                data-midcolor="#ec594b"
+                data-selection-color="rgba(236,89,75,0.25)">
+                <a href="case-studies/tactical-mapping/index.html">
+                    <h2>Nitro Race</h2>
+                    <h3>Wings 2020</h3>
+                    <p>The level of RC nitro buggy competition now has grown into India's one of largest RC nitro buggy racing event and last year took off to National level with a grand success. Radio-controlled cars (or RC cars for short) are battery/gas-powered model cars or trucks that can be controlled from a distance using a specialized transmitter or remote. Small internal combustion engines fueled by a special mixture of nitromethane, methanol, and oil are used to power the vehicle. Nitroracers turned to be the most liked event last year, this time it would be even better.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="inside-design"
+                class='page '
+                style="--highlight-primary: #ec2a5b; --selection-color: rgba(236,42,91,0.25);"
+                data-slug="inside-design"
+                data-primarycolor="#ff3366"
+                data-secondarycolor="#d9204f"
+                data-midcolor="#ec2a5b"
+                data-selection-color="rgba(236,42,91,0.25)">
+                <a href="case-studies/inside-design/index.html">
+                    <h2>Robowar</h2>
+                    <h3>Wings 2020</h3>
+                    <p>Robowars! India's Largest Robot Combat Competition where participants from around the globe battle each other for the coveted Robowars Champion Title. You can witness sparks fly as metal crushes metal in the most glorious battles interspersed with magnificent artist performances for non-stop entertainment. We invite you to be a part of one of Asia's Largest tournament here in Aurangabad during WINGS.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="youmap"
+                class='page client-hidden'
+                style="--highlight-primary: #9b5ae6; --selection-color: rgba(155,90,230,0.25);"
+                data-slug="youmap"
+                data-primarycolor="#ac63ff"
+                data-secondarycolor="#8a50cc"
+                data-midcolor="#9b5ae6"
+                data-selection-color="rgba(155,90,230,0.25)">
+                <a href="case-studies/youmap/index.html">
+                    <h2>Make In GECA</h2>
+                    <h3>Wings 2020</h3>
+                    <p>MAKE IN GECA is an event where students, designers and hackers collaborate for limited time to deliver solutions to various challenges proposed by industries and need-knowers. The solutions prepared are hardware that are ready to be launched in market helping to gather investors for start-up.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="chat"
+                class='page '
+                style="--highlight-primary: #b9e132; --selection-color: rgba(185,225,50,0.25);"
+                data-slug="chat"
+                data-primarycolor="#c5f22f"
+                data-secondarycolor="#acd035"
+                data-midcolor="#b9e132"
+                data-selection-color="rgba(185,225,50,0.25)">
+                <a href="case-studies/chat/index.html">
+                    <h2>Coder of The Year</h2>
+                    <h3>Wings 2020</h3>
+                    <p>CODER OF THE YEAR is an event of WINGS2k20. This event is totally based on coding and web development. Participant at least required a basic and moderate knowledge of C language, C++ Language, Java Language or Python Language, HTML, JavaScript, CSS, PHP. It gives the student chance to test their language skills as well as it will be helpful for their campus placement. It is open for all streams.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="franklin-square"
+                class='page client-hidden'
+                style="--highlight-primary: #f97838; --selection-color: rgba(249,120,56,0.25);"
+                data-slug="franklin-square"
+                data-primarycolor="#ff874b"
+                data-secondarycolor="#F26924"
+                data-midcolor="#f97838"
+                data-selection-color="rgba(249,120,56,0.25)">
+                <a href="case-studies/franklin-square/index.html">
+                    <h2>SAH</h2>
+                    <h3>Wings 2020</h3>
+                    <p>Smart Aurangabad Hackathon is an advent for thinkers and innovators to design, develop and find smart ways to make world a better place. It’s the aura for ideas and the inventions! Art makes questions. Design makes solution. Technology makes possibility and Hackathon turns possibility to come in reality. The first edition of our innovation challange invites participants from across the nation to submit sustainable and scalable solutions to challenges from diverse domains.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="snkrs"
+                class='page '
+                style="--highlight-primary: #ef332d; --selection-color: rgba(239,51,45,0.25);"
+                data-slug="snkrs"
+                data-primarycolor="#ff3c36"
+                data-secondarycolor="#df2924"
+                data-midcolor="#ef332d"
+                data-selection-color="rgba(239,51,45,0.25)">
+                <a href="case-studies/snkrs/index.html">
+                    <h2>Cycloway</h2>
+                    <h3>Wings 2020</h3>
+                    <p>It comprises of analyzing and designing of roller coaster model that operates like a railroad track. They are made from steel or wood and comprises a series of hill and drops, sudden turns and loops like element. Roller coaster don’t have engine. Team shall design and build a Roller coaster meeting requirement specified in these rules. An overview about the event is provided here and the problem statement will be provided at the time of competition</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="broadcast-graphics"
+                class='page client-hidden'
+                style="--highlight-primary: #e8cd02; --selection-color: rgba(232,205,2,0.25);"
+                data-slug="broadcast-graphics"
+                data-primarycolor="#F4D702"
+                data-secondarycolor="#dbc202"
+                data-midcolor="#e8cd02"
+                data-selection-color="rgba(232,205,2,0.25)">
+                <a href="case-studies/broadcast-graphics/index.html">
+                    <h2>Cicada 3301</h2>
+                    <h3>Wings 2020</h3>
+                    <p>CICADA 3301 is a mysterious puzzle solving competition with your technical knowledge. Participants require a basic knowledge of programming languages. CICADA 3301 is an event where you have to utilise your technical knowledge to solve mysterious puzzles to uncover the treasure</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <!-- <li id="stance"
+                class='page client-hidden'
+                style="--highlight-primary: #43a6c4; --selection-color: rgba(67,166,196,0.25);"
+                data-slug="stance"
+                data-primarycolor="#4bbbdd"
+                data-secondarycolor="#3a91ab"
+                data-midcolor="#43a6c4"
+                data-selection-color="rgba(67,166,196,0.25)">
+                <a href="case-studies/stance/index.html">
+                    <h2>Stance</h2>
+                    
+                    <p>An e-commerce site seamlessly designed to embrace the uncommon thread.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="global-transactions"
+                class='page '
+                style="--highlight-primary: #1796e9; --selection-color: rgba(23,150,233,0.25);"
+                data-slug="global-transactions"
+                data-primarycolor="#1ea1f7"
+                data-secondarycolor="#0f8adb"
+                data-midcolor="#1796e9"
+                data-selection-color="rgba(23,150,233,0.25)">
+                <a href="case-studies/global-transactions/index.html">
+                    <h2>Global Payments</h2>
+                    <h3>Paypal</h3>
+                    <p>An interactive installation mapping the billions of transactions Paypal processes in a day.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="luxe-valet"
+                class='page client-hidden'
+                style="--highlight-primary: #6cc0a1; --selection-color: rgba(108,192,161,0.25);"
+                data-slug="luxe-valet"
+                data-primarycolor="#73ccac"
+                data-secondarycolor="#64b396"
+                data-midcolor="#6cc0a1"
+                data-selection-color="rgba(108,192,161,0.25)">
+                <a href="case-studies/luxe-valet/index.html">
+                    <h2>Luxe Valet</h2>
+                    
+                    <p>Reimagining a mobile experience for Luxe Valet by designing and building a native prototype.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="epicurrence-3"
+                class='page client-hidden'
+                style="--highlight-primary: #00ba6d; --selection-color: rgba(0,186,109,0.25);"
+                data-slug="epicurrence-3"
+                data-primarycolor="#00c775"
+                data-secondarycolor="#00ad65"
+                data-midcolor="#00ba6d"
+                data-selection-color="rgba(0,186,109,0.25)">
+                <a href="case-studies/epicurrence-3/index.html">
+                    <h2>Epicurrence</h2>
+                    
+                    <p>Crafting the site for Epicurrence 3 in our own backyard - Park City.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="boston-globe"
+                class='page client-hidden'
+                style="--highlight-primary: #e84848; --selection-color: rgba(232,72,72,0.25);"
+                data-slug="boston-globe"
+                data-primarycolor="#f54c4c"
+                data-secondarycolor="#db4444"
+                data-midcolor="#e84848"
+                data-selection-color="rgba(232,72,72,0.25)">
+                <a href="case-studies/boston-globe/index.html">
+                    <h2>Boston Globe</h2>
+                    
+                    <p>Concepting the next evolution of sports analysis for Boston Globe.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="genworth"
+                class='page client-hidden'
+                style="--highlight-primary: #5ad1a9; --selection-color: rgba(90,209,169,0.25);"
+                data-slug="genworth"
+                data-primarycolor="#5FDDB2"
+                data-secondarycolor="#54c49f"
+                data-midcolor="#5ad1a9"
+                data-selection-color="rgba(90,209,169,0.25)">
+                <a href="case-studies/genworth/index.html">
+                    <h2>Genworth</h2>
+                    
+                    <p>An interactive data visualization showcasing the long-term cost of health care.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="world-atlas"
+                class='page '
+                style="--highlight-primary: #f2cc32; --selection-color: rgba(242,204,50,0.25);"
+                data-slug="world-atlas"
+                data-primarycolor="#fed737"
+                data-secondarycolor="#e5c12c"
+                data-midcolor="#f2cc32"
+                data-selection-color="rgba(242,204,50,0.25)">
+                <a href="case-studies/world-atlas/index.html">
+                    <h2>World Atlas</h2>
+                    <h3>National Geographic</h3>
+                    <p>An immersive iOS app fostering exploration and education around the world.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="espn-fc"
+                class='page '
+                style="--highlight-primary: #1cab43; --selection-color: rgba(28,171,67,0.25);"
+                data-slug="espn-fc"
+                data-primarycolor="#1eb848"
+                data-secondarycolor="#199e3d"
+                data-midcolor="#1cab43"
+                data-selection-color="rgba(28,171,67,0.25)">
+                <a href="case-studies/espn-fc/index.html">
+                    <h2>ESPN FC</h2>
+                    <h3>ESPN</h3>
+                    <p>Collaborating with ESPN to design and build espnfc.com for the 2014 World Cup.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="merchant-app"
+                class='page '
+                style="--highlight-primary: #1d99eb; --selection-color: rgba(29,153,235,0.25);"
+                data-slug="merchant-app"
+                data-primarycolor="#1ea1f7"
+                data-secondarycolor="#1b90de"
+                data-midcolor="#1d99eb"
+                data-selection-color="rgba(29,153,235,0.25)">
+                <a href="case-studies/merchant-app/index.html">
+                    <h2>Merchant App</h2>
+                    <h3>PayPal</h3>
+                    <p>Rethinking how small businesses can use Paypal&#39;s merchant app more efficiently.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li>
+            
+            <li id="city-guides"
+                class='page '
+                style="--highlight-primary: #d700e5; --selection-color: rgba(215,0,229,0.25);"
+                data-slug="city-guides"
+                data-primarycolor="#e300f1"
+                data-secondarycolor="#ca00d9"
+                data-midcolor="#d700e5"
+                data-selection-color="rgba(215,0,229,0.25)">
+                <a href="case-studies/city-guides/index.html">
+                    <h2>City Guides</h2>
+                    <h3>National Geographic</h3>
+                    <p>Everything you need to know about the places you don’t know - at your fingertips on iOS.</p>
+                    <div class="arrow"><div class="circle"></div><img src="static/images/home-arrow.svg" /><div class="spine"></div></div>
+                </a>
+            </li> -->
+            
+        </ul>
+    
+
+    <script>
+        let anchors = ["jaybird","in-car-navigation","tactical-mapping","inside-design","youmap","chat","franklin-square","snkrs","broadcast-graphics","stance","global-transactions","luxe-valet","epicurrence-3","boston-globe","genworth","world-atlas","espn-fc","merchant-app","city-guides"];
+
+        Site.previousPage = Site.currentPage;
+        Site.currentPage = new Home(anchors);
+
+        Site.currentPage.firstRun = function() {
+            Site.currentPage.addListeners();
+            Site.smoothScroll.scrollToY(Site.currentPage.currentIndex * (Site.height || innerHeight));
+
+            let page = Site.currentPage.pages[Site.currentPage.currentIndex];
+            Site.currentPage.ribbonColor = {primary: Color.hexToRgb(page.dataset.primarycolor), secondary: Color.hexToRgb(page.dataset.secondarycolor)};
+            Ribbon.drawArea = {top: 0, height: innerHeight};
+            Ribbon.primaryColor = Site.currentPage.ribbonColor.primary;
+            Ribbon.secondaryColor = Site.currentPage.ribbonColor.secondary;
+            Ribbon.setMode(Ribbon.Mode.HOME);
+            Menu.logo.classList.add('fixed');
+        }
+    </script>
+
+        </div>
+    </div>
+
+    <div id="menu-modal"></div>
+
+    <script>
+        FontCssLoader.init(["https://cloud.typography.com/7471996/6732792/css/fonts.css", "/static/css/fonts.css"], function() {
+            Menu.init();
+
+            Site.init();
+            if (Site.smoothScroll) {
+                Site.smoothScroll.paginate = Site.currentPage.paginate;
+                Site.smoothScroll.paginateModifier = (Site.currentPage.paginateModifier || 1);
+            }
+
+            if (Site.currentPage && Site.currentPage.firstRun) {
+                Site.currentPage.firstRun();
+            }
+
+            Site.startRendering();
+
+            Site.prepareForIntro();
+            document.body.classList.remove('fonts-loading');
+            setTimeout(function() {
+                requestAnimationFrame(function() {
+                    Site.playIntro();
+                });
+            }, 25);
+        });
+    </script>
+</body>
+
+<!-- Mirrored from rallyinteractive.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2020 16:04:57 GMT -->
+</html>
