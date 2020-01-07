@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Wings</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- SEO WITH META TAGS -->
+
+  <meta name="description" content="Official Website of Wings 2020 - National Level event hosted by Government College of Engineering Aurangabad">
+
+  <meta name="author" content="Government College of Engineering Aurangabad">
+
+  <meta name="robots" content="index, follow" />
+
+  <meta name="keywords" content="Wings, wings2020, geca, government college of engineering aurangabad, hackathon, robowars, nitroracing, make in geca, coder of the year, cicada, drone racing, innovation, aurangabad, marathwada, maharashtra, india, technical event">
+
+  <meta name="copyright" content="Government College of Engineering Aurangabad">
+
+  <meta name="DC.title" content="Wings Official Website">
+
+<!-- END SEO WITH META TAGS -->
+
+<!-- GOOGLE ANALYTICS -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151672961-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151672961-3');
+</script>
+
+
+
+<!-- END GOOGLE ANALYTICS -->
+
+    <script src="js/dat_jui.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/again.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body id="particle-slider" >
+                        <!-- Loader -->
+            <div class="loader">
+                    <div class="blobs">
+                        <div class="blob-center"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                    </svg>
+                    <div class="loading-container"><h3>Loading</h3></div>
+                    
+                    </div>
+                
+                    <div id="particles-js" style="z-index: -10;"></div>
+    
+    
+                    <div class="slides" style="z-index: -1">
+                      <div id="first-slide"  class="slide" >
+                        </div>
+                        <script>
+                            // $('#first-slide').data('src','images/comingsoonmed.png');
+                            if(window.innerWidth <= 768){
+                                document.getElementById("first-slide").setAttribute('data-src', 'images/dates_s.png');
+                            }
+                            else{
+                                document.getElementById("first-slide").setAttribute('data-src', 'images/dates_high.png');
+                            }
+                            
+                        </script>
+                      </div>
+                        <canvas  class="draw"></canvas>
+                        
+                        <div class="wings-container" style="z-index: 999">
+                                <img class="wings-image" style="z-index: 999" src="images/wingswhite.png"  alt="wings logo">
+                        </div>
+                        <div class="button-div">
+                                <button onclick="window.location.href = '/allevents';" class="btn1 draw-border">Goto Events</button>
+                                <div class="relocation">
+                                    <a class=" btn1 draw-border " href="ambassador.html"  >College Ambassador</a>
+                                    <a class="btn1 draw-border typeform-share button" href="https://mustafaqazi.typeform.com/to/p36YN2" data-mode="popup" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Sponsor Us.</a>
+                                </div>
+                                <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                                
+                        </div>
+                        
+                        
+                        <dialog id="confirm-modal" class="modal">
+                                <i class="fa fa-times" id="close_it" style="float: right" aria-hidden="true"></i>
+                                <div class="modal-content">
+                                  <h2 class="modal-title">Please tell us your email 
+                                  </h2>
+                                  <p class="modal-description">
+                                    <input id="email" name="email" type="email">
+                                  </p>
+                                  <div class="modal-options">
+                                    <button
+                                      class="btn btn-round btn-fill btn-fill-left option confirm"
+                                      data-text="Notify Me"
+                                      onclick="handle_query()"
+                                    ></button>
+                                    
+                                  </div>
+                                </div>
+                              </dialog>
+              
+        <script>
+          
+            const particlesJSON = {
+"particles": {
+        "number": {
+            "value": 50,
+            "density": {
+                "enable": true,
+                "value_area": 700 //Denser the smaller the number.
+            }
+        },
+        "color": { //The color for every node, not the connecting lines.
+            "value": "#01579b" //Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
+        },
+        "shape": {
+            "type": "circle", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
+            "stroke": { //The border
+                "width": 1,
+                "color": "#145ea8"
+            },
+            "polygon": { //if the shape is a polygon
+                "nb_sides": 5
+            },
+            "image": { //If the shape is an image
+                "src": "",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.7,
+            "random": true
+        },
+        "size": {
+            "value": 10,
+            "random": true
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 200, //The radius before a line is added, the lower the number the more lines.
+            "color": "#007ecc",
+            "opacity": 0.5,
+            "width": 2
+        },
+        "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "top", //Move them off the canvas, either "none", "top", "right", "bottom", "left", "top-right", "bottom-right" et cetera...
+            "random": true,
+            "straight": false, //Whether they'll shift left and right while moving.
+            "out_mode": "out", //What it'll do when it reaches the end of the canvas, either "out" or "bounce".
+            "bounce": false, 
+            "attract": { //Make them start to clump together while moving.
+                "enable": true,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+  //Negate the default interactivity
+  "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": false,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": false,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 800,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 800,
+                "size": 80,
+                "duration": 2,
+                "opacity": 0.8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 400,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+}
+
+    particlesJS("particles-js", particlesJSON)
+
+
+        // <!-- PAGE LOAD SCRIPT -->
+                
+                $('#particles-js').hide();
+                $('.button-div').hide();
+                $('.wings-container').hide();
+
+                var random_load = parseInt(2500 + (Math.random()*600));
+
+                setTimeout(function(){
+
+                    var init = function(){
+            var isMobile = navigator.userAgent &&
+                navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
+            var isSmall = window.innerWidth < 1000;
+            
+            var ps = new ParticleSlider({
+                ptlGap: isMobile || isSmall ? 3 : 0,
+                ptlSize: isMobile || isSmall ? 3 : 1,
+                width: 1e9,
+                height: 1e9
+            });
+                
+            (window.addEventListener
+            ? window.addEventListener('click', function(){ps.init(true)}, false)
+            : window.onclick = function(){ps.init(true)});
+            }
+
+            var initParticleSlider = function(){
+            var psScript = document.createElement('script');
+            (psScript.addEventListener
+                ? psScript.addEventListener('load', init, false)
+                : psScript.onload = init);
+            psScript.src = 'js/ps09.js';
+                psScript.setAttribute('type', 'text/javascript');
+            document.body.appendChild(psScript);
+            }
+                
+            (window.addEventListener
+            ? window.addEventListener('load', initParticleSlider, false)
+            : window.onload = initParticleSlider);
+
+                    $('.loader').fadeOut();
+                    $('#particles-js').fadeIn();
+                    
+                    $('.wings-container').fadeIn();
+
+                    setTimeout(function(){
+                        $('.button-div').fadeIn(2000);
+                    }, 4100)
+                   
+                }, random_load)
+
+                function handle_query(){
+                    document.querySelector('#confirm-modal').close()
+                }
+                $('#close_it').click(function(){
+                    document.querySelector('#confirm-modal').close()
+                });
+               
+
+            </script>
+
+</body>
+</html>
